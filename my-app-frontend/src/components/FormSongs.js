@@ -28,6 +28,7 @@ function Form({addNewSong}){
         setName(event.target.value)
 
     }
+
     return (
         <form onSubmit={handleSubmit}>
             <label>Song Name: </label>
