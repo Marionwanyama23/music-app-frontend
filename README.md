@@ -1,6 +1,6 @@
-Music app
+Grateful dead music app
 
-Music app is an App for music lovers
+Grateful dead app is an App for music lovers
 
 This is a simple website as well as a simple backend, that allows the user to create, delete, and see entries from the backend. This file is the frontend that contains the user experience desired. This file needs to be run with the backend file to work as designed. You can find the back end here on github:  https://github.com/Marionwanyama23/phase-3-sinatra-react-project.git
 
