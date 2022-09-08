@@ -12,4 +12,26 @@ function Form({addNewSong}){
                 "Content-Type": "application/json",
                 "Accepts": "application/json"
             },
-  
+            body: JSON.stringify({
+                name: name
+            })
+        })
+        .then(response => response.json())
+        .then(data => addNewSong(data))
+        window.location.reload()      
+    }  
+      
+    function handleChange(event){
+        setName(event.target.value)
+    }
+    return (
+        <form onSubmit={handleSubmit}>
+            <label>Song Name: </label>
+            <input type="text"  
+            onChange ={handleChange}
+            placeholder="enter your song name..."/>
+            <button type ="Submit" value={name}>Submit!</button>
+        </form>
+    ) 
+}
+export default Form
