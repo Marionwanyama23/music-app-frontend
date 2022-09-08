@@ -22,8 +22,9 @@ function Form({addNewSong}){
     }  
       
     function handleChange(event){
-        
+
         setName(event.target.value)
+        
     }
     return (
         <form onSubmit={handleSubmit}>
